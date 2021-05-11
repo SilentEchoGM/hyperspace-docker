@@ -1,0 +1,12 @@
+{
+  "name": "Hyperspace",
+  "dockerFile": "Dockerfile",
+  "appPort": [55565],
+  "runArgs": ["-u", "node"],
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "/bin/bash"
+  },
+  "postCreateCommand": 
+    "npm i -g @hyperspace/cli && hyp daemon start"
+  
+}
